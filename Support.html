@@ -3,14 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Support</title>
+    <style>
+        body{
+  font-family: Calibri, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+        input[type=text]:focus, input[type=password]:focus {
+  background-color: orange;
+  outline: none;
+}
+        input[type=text], input[type=password], textarea {
+  width: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+        button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity: 1;
+}
+        hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+    </style>
 </head>
 <body>
     <div align="center">
+        <form method="post" action="index.html">
             <h1>Describe Your Issue</h1>
-            Transaction Id<input type="text" name="t_id"><br><br><br>
-            Isssue<br>
-            <textarea name="issue" rows="5" cols="50"></textarea><br><br>
-            <input type="button" name="Submit" value="Submit" onclick="location.href='index.html'"><br>
+        <hr>
+        <b>Transaction Id:</b><br>
+        <input type="text" name="t_id" placeholder="id..." required><br>
+           <b>Isssue:</b><br>
+            <textarea name="issue" rows="5" cols="50" placeholder="Describe here...." required></textarea><br><br>
+        <button type="submit">Submit</button><br>
+            </form>
     </div>
 </body>
 </html>

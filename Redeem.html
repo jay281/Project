@@ -3,13 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Redeem points</title>
+    <style>
+    body{
+  font-family: Calibri, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+.container {
+    padding: 50px;
+
+}
+
+input[type=text], input[type=password], textarea {
+  width: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: orange;
+  outline: none;
+}
+ div {
+            padding: 10px 0;
+         }
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity: 1;
+}
+</style>
 </head>
 <body>
     <div align="center">
+        <form action="redcheck.html" method="post">
             <h1>Enter your Details</h1>
-            Enter amount:<input type="text" name="r_amount" required><br><br> Account No:<input type="password" name="account_no" required><br><br> Confirm Account No:<input type="text" name="c_account_no" required><br><br> IFSC No:<input type="text"
-                name="ifsc" required><br><br>
-            <input type="submit" value="Transafer Now">
+        <hr>
+        <b>Enter amount:</b><br><input type="text" name="r_amount" required><br><br>
+            <b> Account No:</b><br><input type="password" name="account_no" required><br><br>
+            <b> Confirm Account No:</b><br><input type="text" name="c_account_no" required><br><br>
+            <b>IFSC No:</b><br><input type="text" name="ifsc" required><br><br>
+        <button type="submit">Transfer Now</button>
+            </form>
         </div>
     </form>
 </body>

@@ -3,17 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Your Details</title>
+    <style>
+        body{
+  font-family: Calibri, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+        hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+        .r1{
+            background-color: #4CAF50;
+  color: white;
+  padding: 12px 14px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 6%;
+  opacity: 0.8;
+
+        }
+        .r1:hover {
+  opacity: 1;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.8;
+}
+button:hover {
+  opacity: 1;
+}
+    </style>
 </head>
 <body>
     <div align="center">
         <h1>Your Profile</h1>
-        Wallet Balance:000 <button style="margin: 5px;" type="button" value="redeem" onclick="location.href='redeem.html'">Redeem</button><br>
-        <br><br> Name: demon<br><br>
-        Mobile:1234567890
-        <br><br>abc@gmail.com
+        <hr>
+        <b>Wallet Balance:000</b> <button  type="button" class="r1"  onclick="location.href='redeem.html'">Redeem</button><br>
+        <br><br> <b>Name: demon</b><br><br>
+        <b>Mobile No:1234567890</b>
+        <br><br><b>Email:abc@gmail.com</b>
         <br><br>
-        <button type="button " value="Change Password " onclick="location.href='edit.html' ">Edit profile</button>
-        <button type="button" value="home" onclick="location.href='index.html'">Home</button>
+        <button type="button " onclick="location.href='edit.html' ">Edit profile</button>
+        <button type="button"  onclick="location.href='index.html'">Home</button>
     </div>
 </body>
 </html>

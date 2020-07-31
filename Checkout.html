@@ -3,18 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Check out</title>
+    <style>
+        body{
+  font-family: Calibri, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+        hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 18px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 9%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity: 1;
+}
+              #p_name{
+             width: 10%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+            font-size: 15px;
+        }
+    </style>
 </head>
 <body>
+<div align="center">
 <h1>Check out the details</h1>
-<p>Voucher id:4545454</p>
+    <hr>
+    <p><b>Voucher id:4545454</b></p>
 <br>
-<p>Price:000</p>
+    <p><b>Price:000</b></p>
 <br>
-<p>Select payment method</p>
+    <p><b>Select payment method:</b></p>
 <select name="p_name" id="p_name" >
-        <option value="/Debitcard.html">Debit card</option>
-        <option value="/netb.html">Net Banking</option>
+    <option value="Debit"><b>Debit card</b></option>
+    <option value="netb"><b>Net Banking</b></option>
     </select><br><br>
-<input type="button" name="Paynow" value="Paynow" />
+<button type="submit">Pay now</button>
+    </div>
 </body>
 </html>

@@ -3,19 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Payment</title>
+    <style>
+        body{
+  font-family: Calibri, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+        button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity: 1;
+}
+        input[type=text], input[type=password], textarea{
+  width: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+        p{
+            font-size: 17px;
+        }
+        #bank{
+             width: 10%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+            font-size: 16px;
+        }
+        hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: orange;
+            outline: none;
+        }
+
+
+    </style>
 </head>
 <div align="center">
+    <form method="post" action="Summery.html">
     <h1>Please Enter Payment Details</h1>
-    <p>Select a bank</p>
-    <select name="bank" id="bank">
-        <option value="sbi">SBI</option>
-        <option value="hdfc">HDFC</option>
-        <option value="kotak">KOTAK</option>
-        <option value="axis">AXIS</option>
+        <hr>
+        <p><b>Select a bank:</b></p>
+    <select name="bank" id="bank" required>
+        <option value="sbi"><b>SBI</b></option>
+        <option value="hdfc"><b>HDFC</b></option>
+        <option value="kotak"><b>KOTAK</b></option>
+        <option value="axis"><b>AXIS</b></option>
     </select><br><br>
-    Banking id<input type="text" name="b_id"><br><br>
-    Password<input type="password" name="pass"><br><br>
-    <input type="button" value="Pay Now" />
+        <b>Banking id:</b><br><input type="text" name="b_id" required><br><br>
+        <b>Password:</b><br><input type="password" name="pass" required><br><br>
+    <BUTTON type="submit">Pay Now</BUTTON>
+        </form>
 </div>
 </body>
 </html>
