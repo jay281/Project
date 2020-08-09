@@ -12,7 +12,7 @@
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
-button {
+#b1 {
   background-color: #4CAF50;
   color: white;
   padding: 14px 18px;
@@ -22,7 +22,7 @@ button {
   width: 9%;
   opacity: 0.9;
 }
-button:hover {
+#b1:hover {
   opacity: 1;
 }
               #p_name{
@@ -35,9 +35,17 @@ button:hover {
             font-size: 15px;
         }
     </style>
+<script>
+           function WinOpen() {
+  var url=document.redirect.selection.value;
+  document.location.href=url;
+
+}
+        </script>
 </head>
 <body>
 <div align="center">
+    <form method="post" name="redirect">
 <h1>Check out the details</h1>
     <hr>
     <p><b>Voucher id:4545454</b></p>
@@ -45,11 +53,14 @@ button:hover {
     <p><b>Price:000</b></p>
 <br>
     <p><b>Select payment method:</b></p>
-<select name="p_name" id="p_name" >
-    <option value="Debit"><b>Debit card</b></option>
-    <option value="netb"><b>Net Banking</b></option>
+<select  id="p_name" name="selection"  >
+    <option value="Debitcard.html" id="d1"><b>Debit card</b></option>
+    <option value="Netb.html" id="n1"><b>Net Banking</b></option>
     </select><br><br>
-<button type="submit">Pay now</button>
+<input type="button" id="b1"value="Pay Now" onclick="WinOpen();" ></input>
+
+        </form>
     </div>
+
 </body>
 </html>
