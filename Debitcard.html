@@ -32,7 +32,7 @@ hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
-button {
+#b1 {
   background-color: #4CAF50;
   color: white;
   padding: 16px 20px;
@@ -42,21 +42,68 @@ button {
   width: 10%;
   opacity: 0.9;
 }
-button:hover {
+#b1:hover {
   opacity: 1;
 }
 </style>
+    <script>
+        function cardnumber(card_no)
+{
+  var card = "^[0-9]{16}$";
+  if(card_no.value.match(card))
+        {
+            var month="^[1-12]{2}$";
+        var mm=document.getElementById('m1').value;
+            if (mm.match(month))
+            {
+               var year="^[12][0-9]{3}$";
+               var yy=document.getElementById('y1').value;
+               if (yy.match(year))
+               {
+                   var cvv="^[0-9]{3}$";
+                   var cv=document.getElementById('c1').value;
+                   if (cv.match(cvv))
+                   {
+                       document.location.href="Summery.html";
+                   }
+                   else
+                   {
+                        alert("Not a valid  CVV!");
+                   }
+               }
+               else
+               {
+                   alert("Not a valid  year!");
+               }
+            }
+            else
+            {
+                 alert("Not a valid  month!");
+            }
+
+        }
+      else
+        {
+        alert("Not a valid  card number!");
+        document.location.href="Debitcard.html";
+        }
+
+}
+
+    </script>
 </head>
 <body>
-    <form action="Summery.html" method="post">
+    <form  method="post" >
     <div align="center">
     <h1>Please Enter Payment Details</h1>
-        <p><b>Card Number</b></p><input type="text" name="card_no" placeholder="Card number" required><br><br> <b>Expiry Month and year:</b><br><input type="text" maxlength="2" minlength="2" name="mm" placeholder="MM" required>&nbsp;&nbsp;&nbsp;
-    <input type="text" maxlength="2" minlength="2" name="yy" placeholder="YY" required>
+        <p><b>Card Number</b></p><input type="text" name="card_no" placeholder="Card number" required><br><br>
+        <b>Expiry Month and year:</b><br><input type="text"  maxlength="2" minlength="2" id="m1" name="mm" placeholder="MM" required />
+    <input type="text" maxlength="4" minlength="4" name="yy" id="y1" placeholder="YYYY" required />
     <br>
-        <p><b>CVV:</b></p><input type="text" maxlength="3" minlength="3" name="cvv" placeholder="CVV" required><br><br>
-    <button type="submit">Pay Now</button>
+        <p><b>CVV:</b></p><input type="text" maxlength="3" minlength="3" name="cvv" id="c1" placeholder="CVV" required></input><br><br>
+    <input type="button"  value="Pay Now" id="b1" onclick="cardnumber(card_no);" ></input>
+        </div>
     </form>
-</div>
+
 </body>
 </html>
