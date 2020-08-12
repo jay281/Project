@@ -210,6 +210,11 @@ footer{
 
 	.footer-distributed .footer-center i{
 		margin-left: 0;
-	}
+    }
+    i {
+        font-family: 'Cormorant Garamond'!important;
+        font-style: italic!important;
+        font-weight: 400!important;
+    }
 
 }
