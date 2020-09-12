@@ -1,47 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="footer, address, phone, icons" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="assets/css/styles.min.css?h=72b152b954ebeb80d4007fd805bd0866">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-    <title>Payment</title>
+    <title>Net Banking</title>
     <style>
-        body{
-  font-family: Calibri, Helvetica, sans-serif;
-    background-color: lightblue;
-}
-        button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 10%;
-  opacity: 0.9;
-}
-button:hover {
-  opacity: 1;
-}
-        input[type=text], input[type=password], textarea{
-  width: 20%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-        p{
-            font-size: 17px;
-        }
-        #bank{
+
+#bank{
              width: 10%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -50,34 +25,78 @@ button:hover {
   background: #f1f1f1;
             font-size: 16px;
         }
-        hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-        input[type=text]:focus, input[type=password]:focus {
-            background-color: orange;
-            outline: none;
-        }
-
 
     </style>
+	 <script>
+
+
+    </script>
 </head>
-<div align="center">
-    <form method="post" action="Summery.html">
-    <h1>Please Enter Payment Details</h1>
-        <hr>
-        <p><b>Select a bank:</b></p>
+<body>
+	<section class="getintouch">
+        <div class="container modern-form">
+            <div class="text-center">
+                <h4 style="color: #212529;font-size: 45px;">Enter Payments details</h4>
+            </div>
+            <hr class="modern-form__hr">
+            <div class="modern-form__form-container">
+                <form>
+					<div align="center">
+					<p><b>Select a bank:</b></p>
     <select name="bank" id="bank" required>
         <option value="sbi"><b>SBI</b></option>
         <option value="hdfc"><b>HDFC</b></option>
         <option value="kotak"><b>KOTAK</b></option>
         <option value="axis"><b>AXIS</b></option>
-    </select><br><br>
-        <b>Banking id:</b><br><input type="text" name="b_id" required><br><br>
-        <b>Password:</b><br><input type="password" name="pass" required><br><br>
-    <BUTTON type="submit">Pay Now</BUTTON>
-        </form>
-</div>
+    </select>
+					</div><br><br>
+	             <div class="form-row">
+                        <div class="col col-contact">
+                            <input class="form-control input input-tr" type="text"  name="card_no" minlength="4" placeholder="Banking id" required>
+                                <div class="line-box">
+                                    <div class="line"></div>
+                                </div>
+                        </div>
+                        </div>
+                    <br>
+
+                    <br>
+                    <div class="form-row">
+                        <div class="col col-contact">
+                            <input class="form-control input input-tr" type="text"  id="c1" minlength="4"  placeholder="Password" required>
+                                <div class="line-box">
+                                    <div class="line"></div>
+                                </div>
+                        </div>
+                        </div><br>
+                    <div class="form-row">
+                        <div class="col text-center"><button class="btn btn-primary submit-now"  type="submit"  >Pay Now</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		<footer class="footer-distributed">
 
@@ -86,13 +105,13 @@ button:hover {
 				<h3>About <span>Online Deals and Cashback</span></h3>
 
 				<p class="footer-links">
-					<a href="#">Home</a>
+					<a href="index.html">Home</a>
 					|
 					<a href="#">Catagories</a>
 					|
-					<a href="#">About</a>
+					<a href="about.html">About</a>
 					|
-					<a href="#">Contact</a>
+					<a href="Contact.html">Contact</a>
 				</p>
 
 				<p class="footer-company-name">© 2020 Online deals and cashback Pvt. Ltd.</p>
