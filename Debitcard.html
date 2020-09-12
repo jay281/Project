@@ -1,61 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="footer, address, phone, icons" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="assets/css/styles.min.css?h=72b152b954ebeb80d4007fd805bd0866">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-    <title>Payment</title>
- <style>
-body{
-  font-family: Calibri, Helvetica, sans-serif;
-    background-color: lightblue;
-}
-.container {
-    padding: 50px;
+    <title>Debit card</title>
+    <style>
 
-}
 
-input[type=text], input[type=password], textarea {
-  width: 20%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-input[type=text]:focus, input[type=password]:focus {
-  background-color: orange;
-  outline: none;
-}
- div {
-            padding: 10px 0;
-         }
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-#b1 {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 10%;
-  opacity: 0.9;
-}
-#b1:hover {
-  opacity: 1;
-}
-</style>
-    <script>
+
+    </style>
+	 <script>
         function cardnumber(card_no)
 {
   var card = "^[0-9]{16}$";
@@ -102,17 +66,76 @@ hr {
     </script>
 </head>
 <body>
-    <form  method="post" >
-    <div align="center">
-    <h1>Please Enter Payment Details</h1>
-        <p><b>Card Number</b></p><input type="text" name="card_no" placeholder="Card number" required><br><br>
-        <b>Expiry Month and year:</b><br><input type="text"  maxlength="2" minlength="2" id="m1" name="mm" placeholder="MM" required />
-    <input type="text" maxlength="4" minlength="4" name="yy" id="y1" placeholder="YYYY" required />
-    <br>
-        <p><b>CVV:</b></p><input type="text" maxlength="3" minlength="3" name="cvv" id="c1" placeholder="CVV" required></input><br><br>
-    <input type="button"  value="Pay Now" id="b1" onclick="cardnumber(card_no);" ></input>
+	<section class="getintouch">
+        <div class="container modern-form">
+            <div class="text-center">
+                <h4 style="color: #212529;font-size: 45px;">Enter Payments details</h4>
+            </div>
+            <hr class="modern-form__hr">
+            <div class="modern-form__form-container">
+                <form>
+
+                    <div class="form-row">
+                        <div class="col col-contact">
+                            <input class="form-control input input-tr" type="text"  name="card_no" placeholder="Card Number" required>
+                                <div class="line-box">
+                                    <div class="line"></div>
+                                </div>
+                        </div>
+                        </div>
+                    <br>
+                    <div class="form-row">
+                        <div class="col col-contact">
+                            <div class="form-group modern-form__form-group--padding-r"><input class="form-control input input-tr" maxlength="2" minlength="2" type="text" id="m1" placeholder="MM" required>
+                                <div class="line-box">
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-contact">
+                            <div class="form-group modern-form__form-group--padding-l"><input class="form-control input input-tr" id="y1" type="text"  maxlength="4" minlength="4"  placeholder="YYYY" required>
+                                <div class="line-box">
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <div class="col col-contact">
+                            <input class="form-control input input-tr" type="text"  id="c1" maxlength="3" minlength="3" placeholder="CVV" required>
+                                <div class="line-box">
+                                    <div class="line"></div>
+                                </div>
+                        </div>
+                        </div><br>
+                    <div class="form-row">
+                        <div class="col text-center"><button class="btn btn-primary submit-now" onclick="cardnumber(card_no);" type="submit" >Pay Now</button></div>
+                    </div>
+                </form>
+            </div>
         </div>
-    </form>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 		<footer class="footer-distributed">
